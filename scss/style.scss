@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(90deg, #00cdac 0%, #8ddad5 100%);
+  padding: 131px 0 143px;
+  min-height: 100vh;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 75px;
+  color: #f2f2f2;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.search {
+  max-width: 522px;
+  margin: 0 auto 35px;
+  position: relative;
+
+  &__input {
+    display: block;
+    width: 100%;
+    background: #fafafa;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #4f4f4f;
+    border: 0;
+    font-family: inherit;
+    padding: 13px 132px 12px 16px;
+    outline: 0;
+  }
+
+  &__button {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+  }
+}
+
+.button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 24px;
+  cursor: pointer;
+  font-family: inherit;
+
+  &--purple {
+    background: #bb6bd9;
+  }
+
+  &--blue {
+    background: #5d94c2;
+  }
+}
+
+.tracklist {
+  max-width: 656px;
+  margin: 0 auto 24px;
+
+  &__track:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.track {
+  background: #fafafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+
+  &__image {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #404040;
+  }
+
+  &__artist {
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #919191;
+  }
+
+  &__button {
+    width: 42px;
+    height: 42px;
+    background-color: #efeded;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 50%;
+  }
+
+  &__button--play {
+    background-image: url("../img/Play.svg");
+  }
+
+  &__button--pause {
+    background-image: url("../img/Pause.svg");
+  }
+}
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  &:empty {
+    display: none;
+  }
+
+  &__button {
+    display: none;
+    &:first-child {
+      margin-right: 12px;
+    }
+  }
+}

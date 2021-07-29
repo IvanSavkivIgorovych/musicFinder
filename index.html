@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Search</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:regular,500,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <template id="track-template">
+      <div class="track tracklist__track">
+        <img
+          src="https://api.deezer.com/album/103248/image"
+          alt="Cover"
+          class="track__image"
+        />
+        <div class="track__info">
+          <h4 class="track__title">The Real Slim Shady</h4>
+          <div class="track__artist">Eminem</div>
+        </div>
+        <button class="track__button track__button--play"></button>
+      </div>
+    </template>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Music Search</h1>
+      <form action="#" class="search" name="search">
+        <input type="text" name="query" class="search__input" />
+        <button type="submit" class="button button--purple search__button">
+          Search
+        </button>
+      </form>
+      <div class="actions">
+        <button id="prev" class="button button--blue actions__button">
+          Previous
+        </button>
+        <button id="next" class="button button--blue actions__button">
+          Next
+        </button>
+      </div>
+      <div class="tracklist"></div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
